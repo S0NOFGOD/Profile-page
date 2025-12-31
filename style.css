@@ -1,65 +1,105 @@
-/* General Styles */
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-  font-family: 'Arial', sans-serif;
-  background: #f5f5f5;
-  margin: 0;
-  padding: 0;
-  text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
 }
 
-header {
-  background: #4CAF50;
-  color: white;
-  padding: 40px 20px;
+/* Profile Container */
+.profile-container {
+    background-color: #fff;
+    max-width: 800px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 30px;
 }
 
-header h1 {
-  margin: 0;
-  font-size: 2.5em;
+/* Profile Picture */
+.profile-picture img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
 }
 
-header p {
-  margin: 5px 0 0;
-  font-size: 1.2em;
+/* Name & Bio */
+.profile-info {
+    text-align: center;
+    margin: 20px 0;
 }
 
-main {
-  padding: 20px;
+.profile-info h1 {
+    font-size: 28px;
+    color: #333;
 }
 
-section {
-  background: white;
-  margin: 20px auto;
-  padding: 20px;
-  border-radius: 10px;
-  max-width: 600px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+.profile-info p {
+    font-size: 16px;
+    color: #666;
 }
 
-input, textarea {
-  width: 90%;
-  padding: 10px;
-  margin: 10px 0;
-  border-radius: 5px;
-  border: 1px solid #ccc;
+/* Contact Info */
+.contact-info {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #444;
 }
 
-button {
-  padding: 10px 20px;
-  background: #4CAF50;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+/* Skills */
+.skills {
+    margin-bottom: 20px;
 }
 
-button:hover {
-  background: #45a049;
+.skills h2 {
+    margin-bottom: 10px;
+    color: #333;
 }
 
-footer {
-  background: #333;
-  color: white;
-  padding: 15px 0;
-  margin-top: 20px;
+.skills ul {
+    list-style-type: circle;
+    padding-left: 20px;
+}
+
+.skills li {
+    margin-bottom: 5px;
+}
+
+/* Social Links */
+.social-links {
+    text-align: center;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #0077b5;
+    margin: 0 10px;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media(max-width: 600px){
+    .profile-container {
+        padding: 20px;
+    }
+
+    .profile-info h1 {
+        font-size: 24px;
+    }
+
+    .profile-info p {
+        font-size: 14px;
+    }
 }

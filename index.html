@@ -1,39 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>John Doe - Profile</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Destiny Okpone</h1>
-    <p>Web Developer | Designer | Freelancer</p>
-  </header>
 
-  <main>
-    <section class="about">
-      <h2>About Me</h2>
-      <p>Hello! I am Destiny, a passionate web developer who loves creating modern websites.</p>
-    </section>
+    <!-- Profile Container -->
+    <div class="profile-container">
 
-    <section class="contact">
-      <h2>Contact Me</h2>
-      <form id="contactForm">
-        <input type="text" id="name" placeholder="Your Name" required>
-        <input type="email" id="email" placeholder="Your Email" required>
-        <textarea id="message" placeholder="Your Message" required></textarea>
-        <button type="submit">Send</button>
-      </form>
-      <p id="response"></p>
-    </section>
-  </main>
+        <!-- Profile Picture -->
+        <div class="profile-picture">
+            <img src="obehs.jpg" alt="Profile Picture">
+        </div>
 
-  <footer>
-    <p>© 2025 Destiny</p>
-  </footer>
+        <!-- Name & Bio -->
+        <div class="profile-info">
+            <h1>Destiny Okpone</h1>
+            <p>Hi! I’m a web developer and tech enthusiast. I love creating beautiful and interactive websites.</p>
+        </div>
 
-  <script src="script.js"></script>
+        <!-- Contact Info -->
+        <div class="contact-info">
+            <p>Email: destiny@example.com</p>
+            <p>Phone: +234 123 456 7890</p>
+        </div>
+
+        <!-- Skills or Hobbies -->
+        <div class="skills">
+            <h2>Skills & Hobbies</h2>
+            <ul>
+                <li>Web Development</li>
+                <li>React</li>
+                <li>Express.js</li>
+                <li>MongoDB</li>
+                <li>Swimming</li>
+            </ul>
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="social-links">
+            <h2>Connect with Me</h2>
+            <a href="https://github.com" target="_blank">GitHub</a> |
+            <a href="https://linkedin.com" target="_blank">LinkedIn</a> |
+            <a href="https://twitter.com" target="_blank">Twitter</a>
+        </div>
+
+    </div>
+<script src="script.js"></script>
 </body>
 </html>
